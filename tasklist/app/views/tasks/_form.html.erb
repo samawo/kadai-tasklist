@@ -3,9 +3,9 @@
 <% if task.errors.any? %>
  <div id="error_explanation">
     <ul>
-      <% task.errors.full_messages.each do |task| %>
+      <% task.errors.full_messages.each do |message| %>
       <li>
-        <%= task %>
+        <%= message %>
       </li>
 <% end %>
     </ul>
