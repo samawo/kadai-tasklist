@@ -14,7 +14,7 @@
     </ul>
  </div>
 <% end %>
-<% if current_user==task.user %>
+<% if (current_user==task.user)||(!task.user) %>
 <div class="form-group">
 <%= f.label :content, 'タスク' %>
 
