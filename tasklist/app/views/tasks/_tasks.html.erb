@@ -20,8 +20,10 @@
 </span>
         </div>
         <div>
-          <p>
-<%= task.content %>
+          <p>タスク:
+<%= link_to task.content, task_path(task.id) %>
+<br>ステータス:
+        <%= task.status %>
 </p>
         </div>
         <div>
